@@ -172,7 +172,7 @@ unlock their collective genius and turn their ideas into action.
       </div>
       <footer>
         <h1>Reach out to me</h1>
-        <a href="mailto=melissa@whyimpactconsulting.com <melissa@whyimpactconsulting.com>">Gmail</a>
+        <a href="mailto:melissa@whyimpactconsulting.com">Gmail</a>
         <h1>
         +971 56 212 7001
         </h1>
