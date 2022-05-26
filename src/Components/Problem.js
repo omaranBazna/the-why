@@ -5,9 +5,9 @@ function Problem(){
     return (
         <div> 
             {/*<img src={}></img>*/ }
-            <h1>
+            <h3>
              "title of the problem"
-            </h1>
+            </h3>
             <p>
            "description of the problem"
 

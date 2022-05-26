@@ -11,6 +11,7 @@ import logo from './graphics/logo.png'
 import value from './graphics/value.png'
 import purpose from './graphics/purpose.png'
 import research from './graphics/Research.png'
+import about from './graphics/about.jpeg'
 function App() {
   const [isOpen, setOpen] = useState('close')
   const [question, setQue] = useState(1)
@@ -28,28 +29,39 @@ function App() {
       <nav className={isOpen}>
          <img src={logo} />
          <a href="#why"  onClick={()=>isOpen=="close"?setOpen("open"):setOpen("close")}>
-         The Why?
+         The Why
          </a>
          <a href="#help"  onClick={()=>isOpen=="close"?setOpen("open"):setOpen("close")}>
-         help?
+         help
            </a>
            <a href="#impact"  onClick={()=>isOpen=="close"?setOpen("open"):setOpen("close")}>
-           impact?
+           impact
            </a>
            <a href="#clients"  onClick={()=>isOpen=="close"?setOpen("open"):setOpen("close")}>
-           collaborator?
+           collaborator
            </a>
            <a href="#founder"  onClick={()=>isOpen=="close"?setOpen("open"):setOpen("close")}>
-           behind The Why?
+           behind The Why
            </a>
           
       </nav>
       <div className="hero">
+        <div className='colors'>
+          <div className="green">
+
+          </div>
+          <div className="orange">
+            
+          </div>
+          <div className="red">
+            
+          </div>
+        </div>
         <div className='titleSection'>
-         <h2>
+         <h1>
            What is your 
-         </h2>
-         <h1>Why, Mission, Purpose</h1>
+         </h1>
+         <h3><h1>W</h1>hy, <h1>M</h1>ission, <h1>P</h1>urpose</h3>
          <h3>
          Purpose Led Design, Strategy,Innovation and Facilitation 
          </h3>
@@ -57,23 +69,26 @@ function App() {
          </div>
       </div>
       <div className='About' id="About">
+
         <p>
-        The Why is a social
-        and environmental
-        impact consultancy
-        focused on inspiring,
-        defining, and bringing
-        to life a more
-        purposeful future
+        "The Why is a social and environmental impact consultancy focused on inspiring,defining, and bringing to life a more purposeful future"
         </p>
+    
       </div>
 
       <div className="WhyWhy" id="why">
+           <div className="left">
+             <h1>
+             Why was The Why founded?
+             </h1>
+             <h1>
+             What the problems do we solve?
+             </h1>
 
-        <h1>
-        Why was The Why founded?
-        </h1>
-        <p>
+           </div>
+           <div className="right">
+               <div>
+               <p>
         The Why is a private and public sector consultancy founded
         on the belief that we can leave the world a better place than
         the one we came into.
@@ -91,27 +106,31 @@ function App() {
         while being human and discovering the thrill of what it
         means to be us, the greatest wonder in the world.
         </p>
-      </div>
-      <div className="problems" id="help">
-        <h1>
-          What the problems do we solve?
-        </h1>
-        <div>
+      
+               </div>
+               <div>
+          
+        <p>
         <p>
         A DECADE OF CONSULTING EXPERIENCE HAS LED TO THE
          FOLLOWING OBSERVATIONS:
         </p>
-        <h1>
+        <p>
         Key issues
-        </h1>
+        </p>
         <ul>
           <li>
           <Problem />
           </li>
     
         </ul>
-        </div>
+        </p>
+               </div>
+           
+           </div>
+        
       </div>
+     
       <div className="values" id="impact">
         <div>
           <h1>How does The Why deliver value?</h1>
