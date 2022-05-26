@@ -183,6 +183,7 @@ groups, and surveys</li>
 
       <div className='founder' id="founder">
         <img src={mel} />
+        <div>
         <h1>Melissa Saoudy </h1>
         <p>
 
@@ -207,15 +208,15 @@ unlock their collective genius and turn their ideas into action.
 
 
         </p>
-        
+        </div>
       </div>
-      <footer>
-        <h1>Reach out to me</h1>
-        <a href="mailto:melissa@whyimpactconsulting.com">Gmail</a>
-        <h1>
-        +971 56 212 7001
-        </h1>
-      </footer>
+      <div className="contact">
+        <h3>Reach out to me</h3>
+        <a href="mailto:melissa@whyimpactconsulting.com">Gmail:melissa@whyimpactconsulting.com</a>
+        <p>
+            +971 56 212 7001
+        </p>
+      </div>
       
     </div>
   );

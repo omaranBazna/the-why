@@ -76,10 +76,14 @@ background-size:cover;
 overflow:hidden;
 }
 .clients-img{
-  width:100%;
+  width:80%;
+  display: block;
+  border-radius:20px;
+  border:1px solid black;
+  margin:30px auto;
 }
 .clients{
-  width:100vw;
+  width:100%;
 }
 .WhyWhy{
 font-weight:300px;
@@ -129,7 +133,18 @@ background-color:rgb(10, 47, 56);
   display: flex;
   justify-content:space-around;
   align-items:center;
-  
+
+}
+.founder{
+  display:flex;
+}
+.founder img{
+  border-radius:40px;
+  margin:30px;
+  width:20%;
+}
+.contact{
+  margin-left:30px;
 }
 @media screen and (max-width:850px) {
   .About{
