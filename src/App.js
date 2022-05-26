@@ -3,6 +3,9 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import Hamburger from 'hamburger-react'
 import {useState } from 'react'
 import {useEffect} from 'react'
+import ImpactCard from './Components/ImpactCard';
+import client from "./graphics/clients.PNG";
+import mel from './graphics/Mellisa.png'
 function App() {
   const [isOpen, setOpen] = useState('close')
   const [question, setQue] = useState(1)
@@ -114,7 +117,67 @@ and capabilities into account. If it is not implementable, it is not valuable. <
           </li>
         </ul>
       </div>
-   
+      <div className="vlaues">
+          <h1>How does The Why deliver value?</h1>
+          <h1>A holistic focus on outcomes </h1>
+          <p>We take a robust effort to put purpose at the
+heart of developing and implementing new
+solutions by combining technology, products,
+processes, and people to create change. This
+is underpinned by collaboration, research,
+experimentation, and implementation.
+We are agile – we amend objectives and
+capabilities as we learn, and we test and
+experiment to get better outcomes. </p>
+
+      </div>
+      <div className="impact">
+      <ImpactCard ></ImpactCard>
+
+      </div>
+
+
+      <div className='clients'>
+        <img src={client} />
+      </div>
+
+
+      <div className='founde'>
+        <img src={mel} />
+        <h1>Melissa Saoudy </h1>
+        <p>
+
+        Our founder, Melissa, is an impact advisor, creator, and doer. Her
+sweet spot is at the nexus of purpose, strategy, and innovation.
+She has a strong passion for digitally-enabled social impact,
+bringing this to life in the private and public sectors. She thrives
+when working towards better outcomes in healthcare,
+entrepreneurship, social services, and sustainability.
+Lately, she has been working to develop meaningful Web 3
+business models and managing teams to bring them to life.
+A strong and empathetic project manager, she love coaching
+and collaborating closely with clients and multi-disciplinary
+teams. Her skills include human-centered design, value
+proposition design, business model innovation, strategy
+development and execution, stakeholder engagement,
+innovation management, operational planning and execution.
+As an experienced facilitator, she has delivered 100+ workshops in
+the region and counting. She has a knack for getting people to
+unlock their collective genius and turn their ideas into action.
+          
+
+
+        </p>
+        
+      </div>
+      <footer>
+        <h1>Reach out to me</h1>
+        <a href="mailto=melissa@whyimpactconsulting.com <melissa@whyimpactconsulting.com>">Gmail</a>
+        <h1>
+        +971 56 212 7001
+        </h1>
+      </footer>
+      
     </div>
   );
 }

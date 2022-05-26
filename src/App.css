@@ -5,6 +5,7 @@
 }
 
 nav{
+
   background:black;
   align-items:center;
   justify-content:space-around;
@@ -72,11 +73,11 @@ background:rgb(74, 76, 204);
    transition:1s;
    width:100%;
    height:80vh;
+   position:fixed;
  }
   .close {
     transform: translateX(450px);
-    height:0;
-    margin:0;
+ 
   }
   nav a{
     margin-top:20px;
