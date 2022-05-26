@@ -8,6 +8,7 @@ import Problem from './Components/Problem';
 import client from "./graphics/clients.PNG";
 import mel from './graphics/Mellisa.png'
 import logo from './graphics/logo.png'
+import value from './graphics/value.png'
 function App() {
   const [isOpen, setOpen] = useState('close')
   const [question, setQue] = useState(1)
@@ -107,7 +108,8 @@ function App() {
         </ul>
         </div>
       </div>
-      <div className="vlaues" id="impact">
+      <div className="values" id="impact">
+        <div>
           <h1>How does The Why deliver value?</h1>
           <h1>A holistic focus on outcomes </h1>
           <p>We take a robust effort to put purpose at the
@@ -119,7 +121,8 @@ experimentation, and implementation.
 We are agile – we amend objectives and
 capabilities as we learn, and we test and
 experiment to get better outcomes. </p>
-
+</div>
+<img src={value} />
       </div>
       <div className="impact">
       <ImpactCard ></ImpactCard>
