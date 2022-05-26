@@ -23,6 +23,14 @@ nav a:hover{
  height:40px;
  width:40px;
  display:none;
+ cursor:pointer;
+}
+.hero{
+  height:100vh;
+  width:100vw;
+  background-image: url("https://i.ibb.co/BtyxSpq/Getty-Images-659285427-1024x680.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media screen and (max-width:450px) {
@@ -43,13 +51,14 @@ nav a:hover{
  }
   .close {
     transform: translateX(450px);
- 
+    height:0;
+    margin:0;
   }
   nav a{
     margin-top:20px;
   }
    nav a:hover{
-   flex:18%;
+     flex:20%;
    }
   
 }

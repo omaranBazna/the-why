@@ -26,6 +26,9 @@ function App() {
            </a>
           
       </nav>
+      <div className="hero">
+      
+      </div>
    
     </div>
   );
