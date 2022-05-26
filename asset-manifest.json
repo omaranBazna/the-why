@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/the-why/static/css/main.bc703799.css",
+    "main.js": "/the-why/static/js/main.f912833d.js",
+    "static/js/787.58550477.chunk.js": "/the-why/static/js/787.58550477.chunk.js",
+    "static/media/Mellisa.png": "/the-why/static/media/Mellisa.b1019d8b825a2c71c105.png",
+    "static/media/logo.png": "/the-why/static/media/logo.1c549577420fc74fcd5e.png",
+    "static/media/clients.PNG": "/the-why/static/media/clients.ab8964ec8138821df65d.PNG",
+    "static/media/value.png": "/the-why/static/media/value.6f5f8ddf0bdebf8cdc17.png",
+    "static/media/purpose.png": "/the-why/static/media/purpose.777f2c6038e35808817b.png",
+    "static/media/Research.png": "/the-why/static/media/Research.a7267aa8183ae96b7496.png",
+    "index.html": "/the-why/index.html",
+    "main.bc703799.css.map": "/the-why/static/css/main.bc703799.css.map",
+    "main.f912833d.js.map": "/the-why/static/js/main.f912833d.js.map",
+    "787.58550477.chunk.js.map": "/the-why/static/js/787.58550477.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc703799.css",
+    "static/js/main.f912833d.js"
+  ]
+}
