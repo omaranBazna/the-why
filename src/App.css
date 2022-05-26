@@ -1,3 +1,9 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+
 nav{
   background:black;
   align-items:center;
@@ -26,13 +32,31 @@ nav a:hover{
  cursor:pointer;
 }
 .hero{
-  height:100vh;
+  height:80vh;
   width:100vw;
+  margin-top:0;
   background-image: url("https://i.ibb.co/BtyxSpq/Getty-Images-659285427-1024x680.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+button{
+  background:orange;
+  color:white;
+  border:2px solid white;
+cursor:pointer;
+}
+.titleSection{
+ padding-left:20vw;
+padding-top:20vh;
+  color:white;
+}
+.About{
+width:100vw;
+height:80vh;
+color:orange;
+font-size:60px;
+background:rgb(74, 76, 204);
+}
 @media screen and (max-width:450px) {
   
   .hum{
