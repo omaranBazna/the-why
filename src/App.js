@@ -1,9 +1,14 @@
 import './App.css';
-
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import Hamburger from 'hamburger-react'
+import {useState } from 'react'
 function App() {
+  const [isOpen, setOpen] = useState('close')
   return (
     <div className="App">
-      <nav>
+      <div className="hum" onClick={()=>isOpen=="close"?setOpen("open"):setOpen("close")}></div>
+      <nav className={isOpen}>
+      
          <a href="">
          The Why?
          </a>
@@ -19,7 +24,9 @@ function App() {
            <a href="">
            behind The Why?
            </a>
+          
       </nav>
+   
     </div>
   );
 }
