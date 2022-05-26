@@ -138,7 +138,7 @@ experiment to get better outcomes. </p>
 
 
       <div className='clients'>
-        <img src={client} />
+        <img className="clients-img" src={client} />
       </div>
 
 

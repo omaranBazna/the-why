@@ -58,6 +58,12 @@ color:orange;
 font-size:60px;
 background:rgb(74, 76, 204);
 }
+.clients-img{
+  width:100vw;
+}
+.clients{
+  width:100vw;
+}
 @media screen and (max-width:450px) {
   
   .hum{
