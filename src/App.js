@@ -4,6 +4,7 @@ import Hamburger from 'hamburger-react'
 import {useState } from 'react'
 import {useEffect} from 'react'
 import ImpactCard from './Components/ImpactCard';
+import Problem from './Components/Problem';
 import client from "./graphics/clients.PNG";
 import mel from './graphics/Mellisa.png'
 import logo from './graphics/logo.png'
@@ -87,6 +88,10 @@ function App() {
         </p>
       </div>
       <div className="problems" id="help">
+        <h1>
+          What the problems do we solve?
+        </h1>
+        <div>
         <p>
         A DECADE OF CONSULTING EXPERIENCE HAS LED TO THE
          FOLLOWING OBSERVATIONS:
@@ -96,37 +101,11 @@ function App() {
         </h1>
         <ul>
           <li>
-           <h1>
-           Consulting worth its weight in paper
-           </h1>
-            <p>Over focus on developing lengthy documents and deliverables rather
-than achieving outcomes  </p>
+          <Problem />
           </li>
-          
-
-          <li>
-           <h1>
-           Shallow and misdirected
-           </h1>
-            <p>A lack of focus on understanding the “why” creates a misaligned outcome </p>
-          </li>
-          
-          <li>
-           <h1>
-           Copy paste consulting
-           </h1>
-            <p>A one size fits all approach does not work in most scenarios </p>
-          </li>
-          
-           
-          <li>
-           <h1>
-           Theoretical rather than practical
-           </h1>
-            <p>A beautiful plan that does not take your team’s and stakeholders’ needs
-and capabilities into account. If it is not implementable, it is not valuable. </p>
-          </li>
+    
         </ul>
+        </div>
       </div>
       <div className="vlaues" id="impact">
           <h1>How does The Why deliver value?</h1>

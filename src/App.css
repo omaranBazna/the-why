@@ -101,6 +101,10 @@ background-color:rgb(10, 47, 56);
 .colorFullFont{
   color:rgb(15, 85, 102);
 }
+.problems{
+  display:flex;
+  height:80vh;
+}
 @media screen and (max-width:850px) {
   .About{
     font-size:30px;
