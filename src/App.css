@@ -125,6 +125,12 @@ background-color:rgb(10, 47, 56);
   display:flex;
 }
 .values img{width:50%;}
+.impact{
+  display: flex;
+  justify-content:space-around;
+  align-items:center;
+  
+}
 @media screen and (max-width:850px) {
   .About{
     font-size:30px;
