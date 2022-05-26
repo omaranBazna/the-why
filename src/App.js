@@ -6,6 +6,7 @@ import {useEffect} from 'react'
 import ImpactCard from './Components/ImpactCard';
 import client from "./graphics/clients.PNG";
 import mel from './graphics/Mellisa.png'
+import logo from './graphics/logo.png'
 function App() {
   const [isOpen, setOpen] = useState('close')
   const [question, setQue] = useState(1)
@@ -19,20 +20,20 @@ function App() {
     <div className="App">
       <div className="hum" onClick={()=>isOpen=="close"?setOpen("open"):setOpen("close")}></div>
       <nav className={isOpen}>
-      
-         <a href="#About">
+         <img src={logo} />
+         <a href="#why"  onClick={()=>isOpen=="close"?setOpen("open"):setOpen("close")}>
          The Why?
          </a>
-         <a href="">
+         <a href="#help"  onClick={()=>isOpen=="close"?setOpen("open"):setOpen("close")}>
          help?
            </a>
-           <a href="">
+           <a href="#impact"  onClick={()=>isOpen=="close"?setOpen("open"):setOpen("close")}>
            impact?
            </a>
-           <a href="">
+           <a href="#clients"  onClick={()=>isOpen=="close"?setOpen("open"):setOpen("close")}>
            collaborator?
            </a>
-           <a href="">
+           <a href="#founder"  onClick={()=>isOpen=="close"?setOpen("open"):setOpen("close")}>
            behind The Why?
            </a>
           
@@ -61,21 +62,27 @@ function App() {
         </p>
       </div>
 
-      <div className="WhyWhy">
+      <div className="WhyWhy" id="why">
+
+        <h1>
+        Why was The Why founded?
+        </h1>
         <p>
         The Why is a private and public sector consultancy founded
         on the belief that we can leave the world a better place than
         the one we came into.
+
         This is business consulting with a difference.
         We intend to bring your triple bottom line to life, maximizing
         profit, people, and planet. We believe in the power of purpose
         for achieving these outcomes.
+        
         We meet you where you are, scale and pivot with you, all
         while being human and discovering the thrill of what it
         means to be us, the greatest wonder in the world.
         </p>
       </div>
-      <div className="problems">
+      <div className="problems" id="help">
         <p>
         A DECADE OF CONSULTING EXPERIENCE HAS LED TO THE
          FOLLOWING OBSERVATIONS:
@@ -117,7 +124,7 @@ and capabilities into account. If it is not implementable, it is not valuable. <
           </li>
         </ul>
       </div>
-      <div className="vlaues">
+      <div className="vlaues" id="impact">
           <h1>How does The Why deliver value?</h1>
           <h1>A holistic focus on outcomes </h1>
           <p>We take a robust effort to put purpose at the
@@ -137,12 +144,12 @@ experiment to get better outcomes. </p>
       </div>
 
 
-      <div className='clients'>
+      <div className='clients' id="clients">
         <img className="clients-img" src={client} />
       </div>
 
 
-      <div className='founde'>
+      <div className='founder' id="founder">
         <img src={mel} />
         <h1>Melissa Saoudy </h1>
         <p>
