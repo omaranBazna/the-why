@@ -111,7 +111,20 @@ background-color:rgb(10, 47, 56);
   align-items:center;
   justify-content:center;
 }
-.values img{width:40%;}
+.purpose{
+  display:flex;
+  align-items: center;
+}
+.purpose img{
+  width:50%;
+}
+.research img{
+  width:70%;
+}
+.research{
+  display:flex;
+}
+.values img{width:50%;}
 @media screen and (max-width:850px) {
   .About{
     font-size:30px;

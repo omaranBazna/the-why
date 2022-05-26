@@ -9,6 +9,8 @@ import client from "./graphics/clients.PNG";
 import mel from './graphics/Mellisa.png'
 import logo from './graphics/logo.png'
 import value from './graphics/value.png'
+import purpose from './graphics/purpose.png'
+import research from './graphics/Research.png'
 function App() {
   const [isOpen, setOpen] = useState('close')
   const [question, setQue] = useState(1)
@@ -124,6 +126,47 @@ experiment to get better outcomes. </p>
 </div>
 <img src={value} />
       </div>
+
+      <div className="purpose">
+        <h1>
+        We deliver purpose driven…
+        </h1>
+        <img src={purpose} />
+      </div>
+
+    <div className="research">
+    <div>
+      <h1>
+      Research and Discovery
+      </h1>
+      <img src={research} />
+    </div>
+       <div>
+         <h2>
+         Do you want to:
+         </h2>
+         <ul>
+         <li>Consolidate a wide array of data to create actionable insights?</li>
+         <li>Rally your team around the “aha” moments and a single version of the truth?</li>
+          <li>Have the confidence to take your team from ideas to action?</li>
+         </ul>
+
+         <h2>
+         How we can help:
+         </h2>
+         <ul>
+         <li>Defining purpose-driven research plans that embed a wide range of methods
+to uncover insights and develop meaningful findings</li>
+         <li>Blending tactics like benchmarking, stakeholder interviews, customer focus
+groups, and surveys</li>
+          <li>Developing actionable insights</li>
+         </ul>
+       </div>
+
+
+
+    </div>
+
       <div className="impact">
       <ImpactCard ></ImpactCard>
 
