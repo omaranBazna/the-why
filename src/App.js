@@ -57,6 +57,63 @@ function App() {
         purposeful future
         </p>
       </div>
+
+      <div className="WhyWhy">
+        <p>
+        The Why is a private and public sector consultancy founded
+        on the belief that we can leave the world a better place than
+        the one we came into.
+        This is business consulting with a difference.
+        We intend to bring your triple bottom line to life, maximizing
+        profit, people, and planet. We believe in the power of purpose
+        for achieving these outcomes.
+        We meet you where you are, scale and pivot with you, all
+        while being human and discovering the thrill of what it
+        means to be us, the greatest wonder in the world.
+        </p>
+      </div>
+      <div className="problems">
+        <p>
+        A DECADE OF CONSULTING EXPERIENCE HAS LED TO THE
+         FOLLOWING OBSERVATIONS:
+        </p>
+        <h1>
+        Key issues
+        </h1>
+        <ul>
+          <li>
+           <h1>
+           Consulting worth its weight in paper
+           </h1>
+            <p>Over focus on developing lengthy documents and deliverables rather
+than achieving outcomes  </p>
+          </li>
+          
+
+          <li>
+           <h1>
+           Shallow and misdirected
+           </h1>
+            <p>A lack of focus on understanding the “why” creates a misaligned outcome </p>
+          </li>
+          
+          <li>
+           <h1>
+           Copy paste consulting
+           </h1>
+            <p>A one size fits all approach does not work in most scenarios </p>
+          </li>
+          
+           
+          <li>
+           <h1>
+           Theoretical rather than practical
+           </h1>
+            <p>A beautiful plan that does not take your team’s and stakeholders’ needs
+and capabilities into account. If it is not implementable, it is not valuable. </p>
+          </li>
+        </ul>
+      </div>
    
     </div>
   );
