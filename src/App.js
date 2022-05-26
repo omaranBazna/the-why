@@ -71,12 +71,16 @@ function App() {
         The Why is a private and public sector consultancy founded
         on the belief that we can leave the world a better place than
         the one we came into.
-
-        This is business consulting with a difference.
+         <br></br>
+         <br></br>
+        This is business consulting <span className="colorFullFont"> with a difference</span>.
+        <br></br>
+        <br></br>
         We intend to bring your triple bottom line to life, maximizing
         profit, people, and planet. We believe in the power of purpose
         for achieving these outcomes.
-        
+        <br></br>
+        <br></br>
         We meet you where you are, scale and pivot with you, all
         while being human and discovering the thrill of what it
         means to be us, the greatest wonder in the world.

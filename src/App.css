@@ -76,10 +76,30 @@ background-size:cover;
 overflow:hidden;
 }
 .clients-img{
-  width:100vw;
+  width:100%;
 }
 .clients{
   width:100vw;
+}
+.WhyWhy{
+font-weight:300px;
+display:flex;
+height:60vh;
+color:white;
+background-color:rgb(10, 47, 56);
+}
+.WhyWhy h1{
+  font-size:25px;
+  margin:0 auto;
+  height:100%;
+
+  padding:20px;
+}
+.WhyWhy p{
+  padding:20px;
+}
+.colorFullFont{
+  color:rgb(15, 85, 102);
 }
 @media screen and (max-width:850px) {
   .About{
