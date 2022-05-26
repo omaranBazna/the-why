@@ -4,6 +4,7 @@
   margin:0px;
   padding:0px;
   box-sizing: border-box;
+  font-family: 'Martel', serif;
 }
 
 nav{
@@ -39,16 +40,18 @@ nav a:hover{
  cursor:pointer;
 }
 .hero{
-  height:80vh;
+  height:60vh;
   width:100%;
   margin-top:0;
   background-color:rgb(10, 47, 56);
 }
 .hero h3{
   margin:10px 0px;
+
 }
 .hero h2{
   margin:10px 0px;
+;
 }
 button{
   background:rgb(243, 162, 11);
@@ -60,8 +63,8 @@ button{
 cursor:pointer;
 }
 .titleSection{
- padding-left:20vw;
-padding-top:10vh;
+ padding-left:15vw;
+padding-top:15vh;
   color:white;
 }
 .About{

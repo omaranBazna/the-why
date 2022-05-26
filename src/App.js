@@ -15,11 +15,13 @@ function App() {
   const [isOpen, setOpen] = useState('close')
   const [question, setQue] = useState(1)
   const questions=["Why?","Mission?","Purpose?"];
+  /*
   useEffect(()=>{
    setInterval(()=>{
      setQue(old=> old+1)
     },1000)
   },[])
+  */
   return (
     <div className="App">
       <div className="hum" onClick={()=>isOpen=="close"?setOpen("open"):setOpen("close")}></div>
@@ -47,7 +49,7 @@ function App() {
          <h2>
            What is your 
          </h2>
-         <h1>{questions[question%3]}</h1>
+         <h1>Why, Mission, Purpose</h1>
          <h3>
          Purpose Led Design, Strategy,Innovation and Facilitation 
          </h3>
