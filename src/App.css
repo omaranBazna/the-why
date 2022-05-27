@@ -181,7 +181,13 @@ overflow:hidden;
 }
 .research{
   display:flex;
+  align-items:center;
+  margin-left:30px;
 }
+.research  div{
+  padding:20px;
+}
+
 .values img{width:50%;}
 .impact{
   display: flex;
