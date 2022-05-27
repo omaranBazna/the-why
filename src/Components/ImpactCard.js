@@ -1,6 +1,6 @@
 import react from 'react'
 import '../ImpactCard.css'
-function ImpactCard(){
+function ImpactCard(title,des){
 
     return (
         <div className="impact-card"> 
@@ -8,7 +8,7 @@ function ImpactCard(){
              "title"
             </h1>
             <p>
-           "des"
+            "description"
 
             </p>
         </div>

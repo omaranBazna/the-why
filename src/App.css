@@ -35,11 +35,21 @@ nav a:hover{
  
 }
 .hum{
- background:white;
- height:40px;
- width:40px;
+  padding:4px;
+ background:black;
+ height:30px;
+ width:30px;
+ border-radius:5px;
  display:none;
  cursor:pointer;
+}
+.top,.middle,.bottom{
+  height:2px;
+  width:100%;
+  background-color: white;
+  margin:2.5px auto;
+  padding:2px;
+  border-radius:3px;
 }
 .hero{
   display:flex;
@@ -191,7 +201,23 @@ overflow:hidden;
 .values img{width:50%;}
 .impact{
   display: flex;
+  flex-direction: column;
   justify-content:space-around;
+  align-items:center;
+   overflow: hidden;
+}
+.impactCards{
+  display: flex;
+ 
+  justify-content:space-around;
+  align-items:center;
+  width:60vw;
+   overflow: hidden;
+}
+.Arrows{
+  display: flex;
+ 
+  justify-content:center;
   align-items:center;
 
 }
@@ -205,21 +231,25 @@ overflow:hidden;
 .founder img{
   border-radius:40px;
   margin:30px;
-  width:20%;
+
+  flex-basis: 220px;
+  height:245px;
+  width:220px;
+	flex-grow: 0;
+	flex-shrink: 0;
 
 }
 .founder p{
   padding:20px;
 }
-.contact{
-  margin-left:30px;
-}
+
 
 .About{
   width:100%;
-  height:30vh;
+  height:minmax(30vh,fit-content);
   color:white;
   background:black;
+  padding:10px 5px;
 }
 .About p{
 	display: block;
@@ -233,7 +263,7 @@ overflow:hidden;
   flex:30%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 .left h1{
   height:50%;
@@ -241,6 +271,9 @@ overflow:hidden;
 .right{
   flex:70%;
   font-size:25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .contact{
   background:black;
@@ -257,13 +290,38 @@ overflow:hidden;
 .clients{
   padding:80px;
 }
+img{
+  border-radius:15px;
+  border:2px solid black;
+  display:block;
+  margin:20px auto;
+}
 @media screen and (max-width:850px) {
+  .values{
+    flex-direction: column-reverse;
+  }
+  .research{
+  flex-direction: column;
+  }
+  .purpose{
+flex-direction: column-reverse;
+  }
   .About{
-    font-size:30px;
-    padding-right:30%;
+    font-size:10px;
+
+  }
+  .clients{
+    display:none;
+  }
+  .founder{
+    flex-direction:column;
+    align-items:center;
+  }
+  .contact{
+    flex-direction: column;
   }
 }
-@media screen and (max-width:450px) {
+@media screen and (max-width:650px) {
 
   .hum{
     display:block;
@@ -281,8 +339,11 @@ overflow:hidden;
    position:fixed;
  }
   .close {
-    transform: translateX(450px);
+    transform: translateX(650px);
  
+  }
+  .close div{
+   background:red;
   }
   nav a{
     margin-top:20px;

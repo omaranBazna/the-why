@@ -12,6 +12,7 @@ import value from './graphics/value.png'
 import purpose from './graphics/purpose.png'
 import research from './graphics/Research.png'
 import about from './graphics/about.jpeg'
+import Arrow from './Components/Arrow'
 function App() {
   const [isOpen, setOpen] = useState('close')
   const [question, setQue] = useState(1)
@@ -25,7 +26,20 @@ function App() {
   */
   return (
     <div className="App">
-      <div className="hum" onClick={()=>isOpen=="close"?setOpen("open"):setOpen("close")}></div>
+      <div className="hum"  onClick={()=>isOpen=="close"?setOpen("open"):setOpen("close")}>
+         <div classNmae={isOpen}>
+        <div className="top">
+
+        </div>
+        <div className="middle">
+          
+          </div>
+          <div className="bottom">
+          
+          </div>
+
+          </div>
+      </div>
       <nav className={isOpen}>
          <img src={logo} />
          <a href="#why"  onClick={()=>isOpen=="close"?setOpen("open"):setOpen("close")}>
@@ -109,7 +123,9 @@ function App() {
       
                </div>
                <div>
-          
+           
+               </div>
+               <div>
           <div className="fullWidth"></div>
 
         <p>
@@ -135,8 +151,7 @@ function App() {
         </ul>
         
                </div>
-           
-           </div>
+               </div>
         
       </div>
      
@@ -182,9 +197,9 @@ experiment to get better outcomes. </p>
          </h2>
          <ul>
          <li>Defining purpose-driven research plans that embed a wide range of methods
-to uncover insights and develop meaningful findings</li>
+             to uncover insights and develop meaningful findings</li>
          <li>Blending tactics like benchmarking, stakeholder interviews, customer focus
-groups, and surveys</li>
+              groups, and surveys</li>
           <li>Developing actionable insights</li>
          </ul>
        </div>
@@ -199,11 +214,22 @@ groups, and surveys</li>
     </div>
 
       <div className="impact">
+        <h1>
+        What is some of our impact ?
+        </h1>
+        <div className="Arrows">
+        <Arrow classArrow="left2" />
+        <div className="impactCards">
+       
+      <ImpactCard  ></ImpactCard>
       <ImpactCard ></ImpactCard>
       <ImpactCard ></ImpactCard>
       <ImpactCard ></ImpactCard>
       <ImpactCard ></ImpactCard>
-      <ImpactCard ></ImpactCard>
+   
+      </div>
+      <Arrow classArrow="right2" />
+      </div>
       </div>
 
 
