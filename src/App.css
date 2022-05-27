@@ -1,10 +1,15 @@
-
+:root {
+  --main-h1:35px;
+  --second-h1:30px;
+  --main-p:15px;
+  --second-p:25px;
+}
 
 *{
   margin:0px;
   padding:0px;
   box-sizing: border-box;
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'Roboto', sans-serif;
 }
 nav h3,h1,h2{
   display:inline;
@@ -27,7 +32,7 @@ nav a{
   flex:20%;
   text-align:center;
   transition:0.5s;
-  font-size:15px;
+  font-size:var(--main-p);
 }
 nav a:hover{
   color:white;
@@ -129,15 +134,16 @@ padding-top:0vh;
   width:100%;
 }
 .WhyWhy{
-font-weight:300px;
+padding:20px 0px;
 display:flex;
 height:minmax(80vh,fit-content);
-color:white;
+color:rgb(199, 199, 199);
 background-color:rgb(10, 47, 56);
 overflow:hidden;
+font-family: 'arial', serif;
 }
 .WhyWhy h1{
-  font-size:35px;
+  font-size:var(--second-h1);
   margin:20px auto;
   height:100%;
 
@@ -145,7 +151,7 @@ overflow:hidden;
 }
 .WhyWhy p{
   
-  font-size:23px;
+  font-size:var(--second-p);
 }
 .colorFullFont{
   color:rgb(15, 85, 102);
@@ -166,20 +172,24 @@ overflow:hidden;
   }
   .peoblems p{
     padding:20px;
-    font-size:23px;
+    font-size:var(--second-p);
   }
 .values{
   width:100%;
   display:flex;
   align-items:center;
   justify-content:center;
+  font-size: var(--second-p);
 }
 .purpose{
   display:flex;
   align-items: center;
+  font-size: var(--second-p);
+  margin-left:20px;
 }
 .purpose h1{
   width:50%;
+  margin-left:60px;
 }
 .purpose img{
   width:50%;
@@ -193,6 +203,7 @@ overflow:hidden;
   display:flex;
   align-items:center;
   margin-left:30px;
+  font-size: var(--second-p);
 }
 .research  div{
   padding:20px;
@@ -204,7 +215,8 @@ overflow:hidden;
   flex-direction: column;
   justify-content:space-around;
   align-items:center;
-   overflow: hidden;
+  overflow: hidden;
+  font-size: var(--second-p);
 }
 .impactCards{
   display: flex;
@@ -225,7 +237,7 @@ overflow:hidden;
   display:flex;
   background:black;
   color:white;
-  font-size:20px;
+  font-size:var(--second-p);
   padding:10px;
 }
 .founder img{
@@ -247,9 +259,10 @@ overflow:hidden;
 .About{
   width:100%;
   height:minmax(30vh,fit-content);
-  color:white;
-  background:black;
-  padding:10px 5px;
+  color:rgb(214, 214, 214);
+  background:rgb(16, 74, 88);
+  padding:20px 5px;
+  
 }
 .About p{
 	display: block;
@@ -257,7 +270,7 @@ overflow:hidden;
  padding-top:20px;
  width:50%;
  text-align:center;
- font-size:35px;
+ font-size:var(--second-p);
 }
 .left{
   flex:30%;
@@ -270,7 +283,7 @@ overflow:hidden;
 }
 .right{
   flex:70%;
-  font-size:25px;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -283,9 +296,12 @@ overflow:hidden;
   justify-content: space-around;
   padding:20px;
 }
+.contact h3{
+  color:rgb(14, 179, 179);
+}
 .contact a{
   text-decoration: none;
-  color:rgb(0, 255, 234);
+  color:rgb(255, 255, 255);
 }
 .clients{
   padding:80px;
@@ -295,6 +311,9 @@ img{
   border:2px solid black;
   display:block;
   margin:20px auto;
+}
+.About{
+  font-size:var(--main-p);
 }
 @media screen and (max-width:850px) {
   .values{

@@ -15,7 +15,20 @@ import about from './graphics/about.jpeg'
 import Arrow from './Components/Arrow'
 function App() {
   const [isOpen, setOpen] = useState('close')
-  const [question, setQue] = useState(1)
+  const [question, setQue] = useState(1);
+  const [x_pos,setPos]=useState(0);
+
+  function setPosI(){
+ 
+      setPos(500)
+    
+  }
+  function setPosD(){
+    
+    setPos(-500)
+  
+  }
+  
   const questions=["Why?","Mission?","Purpose?"];
   /*
   useEffect(()=>{
@@ -46,16 +59,16 @@ function App() {
          The Why
          </a>
          <a href="#help"  onClick={()=>isOpen=="close"?setOpen("open"):setOpen("close")}>
-         help
+         Help
            </a>
            <a href="#impact"  onClick={()=>isOpen=="close"?setOpen("open"):setOpen("close")}>
-           impact
+           Impact
            </a>
            <a href="#clients"  onClick={()=>isOpen=="close"?setOpen("open"):setOpen("close")}>
-           collaborator
+           Collaborator
            </a>
            <a href="#founder"  onClick={()=>isOpen=="close"?setOpen("open"):setOpen("close")}>
-           behind The Why
+           Behind The Why
            </a>
           
       </nav>
@@ -126,12 +139,7 @@ function App() {
            
                </div>
                <div>
-          <div className="fullWidth"></div>
-
-        <p>
-        A DECADE OF CONSULTING EXPERIENCE HAS LED TO THE
-         FOLLOWING OBSERVATIONS:
-        </p>
+       <br></br>
         <p>
         Key issues:
         </p>
@@ -191,7 +199,10 @@ experiment to get better outcomes. </p>
          <li>Rally your team around the “aha” moments and a single version of the truth?</li>
           <li>Have the confidence to take your team from ideas to action?</li>
          </ul>
-
+         <br>
+         </br>
+         <br>
+         </br>
          <h2>
          How we can help:
          </h2>
@@ -217,18 +228,18 @@ experiment to get better outcomes. </p>
         <h1>
         What is some of our impact ?
         </h1>
-        <div className="Arrows">
-        <Arrow classArrow="left2" />
-        <div className="impactCards">
-       
-      <ImpactCard  ></ImpactCard>
-      <ImpactCard ></ImpactCard>
-      <ImpactCard ></ImpactCard>
-      <ImpactCard ></ImpactCard>
-      <ImpactCard ></ImpactCard>
+        <div className="Arrows"  >
+        <Arrow name="left2"  />
+        <div className="impactCards" >
+      
+      <ImpactCard Style={`transform:translateX${x_pos}px`}> </ImpactCard>
+      <ImpactCard Style={`transform:translateX${x_pos}px`}></ImpactCard>
+      <ImpactCard Style={`transform:translateX${x_pos}px`}></ImpactCard>
+      <ImpactCard Style={`transform:translateX${x_pos}px`}></ImpactCard>
+      <ImpactCard Style={`transform:translateX${x_pos}px`}></ImpactCard>
    
       </div>
-      <Arrow classArrow="right2" />
+      <Arrow name="right2"   />
       </div>
       </div>
 
@@ -268,7 +279,7 @@ unlock their collective genius and turn their ideas into action.
         </div>
       </div>
       <div className="contact">
-        <h3>Reach out to me</h3>
+        <h3>Reach out to me:</h3>
         <a href="mailto:melissa@whyimpactconsulting.com">Gmail:melissa@whyimpactconsulting.com</a>
         <p>
             +971 56 212 7001

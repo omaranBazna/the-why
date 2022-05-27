@@ -1,7 +1,15 @@
 .Arrow{
+   
+    margin:30px;
     height:200px;
     width:40px;
     background-color:rgb(121, 235, 121);
-    border-radius: 10px;
+    border-radius: 5px;
     cursor:pointer;
+}
+.left2{
+border-radius:10px 0 0 10px;
+}
+.right2{
+    border-radius:0 10px 10px 0;
 }
