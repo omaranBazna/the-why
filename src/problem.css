@@ -1,0 +1,25 @@
+
+.problem{
+    margin:30px auto;
+}
+h3{
+height:fit-content;
+cursor:pointer;
+}
+p{
+    transition:1s;
+    overflow: hidden;
+    padding:0px 10px;
+    width:fit-content;
+    min-height: 0px;
+}
+.close2{
+    height:00px;
+    margin:0px;
+}
+.open2{
+    min-height: 200px;
+    height:fit-content;
+    background:rgb(17, 75, 90);
+    
+}

@@ -110,21 +110,30 @@ function App() {
                </div>
                <div>
           
-        <p>
+          <div className="fullWidth"></div>
+
         <p>
         A DECADE OF CONSULTING EXPERIENCE HAS LED TO THE
          FOLLOWING OBSERVATIONS:
         </p>
         <p>
-        Key issues
+        Key issues:
         </p>
         <ul>
           <li>
           <Problem />
           </li>
-    
+          <li>
+          <Problem />
+          </li>
+          <li>
+          <Problem />
+          </li>
+          <li>
+          <Problem />
+          </li>
         </ul>
-        </p>
+        
                </div>
            
            </div>
@@ -149,19 +158,15 @@ experiment to get better outcomes. </p>
       </div>
 
       <div className="purpose">
+      <img src={purpose} />
         <h1>
         We deliver purpose driven…
         </h1>
-        <img src={purpose} />
+       
       </div>
 
     <div className="research">
-    <div>
-      <h1>
-      Research and Discovery
-      </h1>
-      <img src={research} />
-    </div>
+    
        <div>
          <h2>
          Do you want to:
@@ -183,7 +188,12 @@ groups, and surveys</li>
           <li>Developing actionable insights</li>
          </ul>
        </div>
-
+       <div>
+      <h1>
+      Research and Discovery
+      </h1>
+      <img src={research} />
+    </div>
 
 
     </div>
